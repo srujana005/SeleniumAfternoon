@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="grup">
+    <groups>
+  <run>
+  <exclude name="reg"></exclude>
+   <include name="wip"></include>
+  <include name="smoke"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="teng.Grps"/>
+    </classes>
+  </test> <!-- grup -->
+</suite> <!-- Suite -->
+
