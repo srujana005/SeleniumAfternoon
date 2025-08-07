@@ -3,6 +3,30 @@
   <groupId>testpractice</groupId>
   <artifactId>testpractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.3.1</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>
+                          <!--${suiteXmlFile}-->  <!-- Uses the value from -D -->
+                       parameter.xml
+							</suiteXmlFile>
+
+						</suiteXmlFiles>
+
+					</configuration>
+					<dependencies>
+
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
   <dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -26,12 +50,16 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.11.0</version>
-			<scope>test</scope>
-		</dependency>
+	
+    <!-- Other dependencies -->
+
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version> <!-- You can use latest version -->
+        <scope>test</scope>
+    </dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>

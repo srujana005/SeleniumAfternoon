@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-31T05:16:10 IST" name="Default suite" finished-at="2025-07-31T05:16:15 IST" duration-ms="4398">
+  <suite started-at="2025-08-07T05:46:59 IST" name="Suite" finished-at="2025-08-07T05:46:59 IST" duration-ms="344">
     <groups>
+      <group name="regression">
+        <method signature="Grouomethod2.checkoutWithoutPaymentMethod()[pri:0, instance:grpmethod.Grouomethod2@3bcd05cb]" name="checkoutWithoutPaymentMethod" class="grpmethod.Grouomethod2"/>
+        <method signature="GroupMethodTest.test2()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" name="test2" class="grpmethod.GroupMethodTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Grouomethod2.checkoutWithSingleItem()[pri:0, instance:grpmethod.Grouomethod2@3bcd05cb]" name="checkoutWithSingleItem" class="grpmethod.Grouomethod2"/>
+        <method signature="GroupMethodTest.test1()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" name="test1" class="grpmethod.GroupMethodTest"/>
+        <method signature="GroupMethodTest.test3()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" name="test3" class="grpmethod.GroupMethodTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="GroupMethodTest.test3()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" name="test3" class="grpmethod.GroupMethodTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-07-31T05:16:10 IST" name="Default test" finished-at="2025-07-31T05:16:15 IST" duration-ms="4398">
-      <class name="pom1.FacebookLoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:pom1.FacebookLoginTest@710c2b53]" started-at="2025-07-31T05:16:10 IST" name="setUp" finished-at="2025-07-31T05:16:14 IST" duration-ms="4051" status="PASS">
+    <test started-at="2025-08-07T05:46:59 IST" name="Test" finished-at="2025-08-07T05:46:59 IST" duration-ms="344">
+      <class name="grpmethod.GroupMethodTest">
+        <test-method signature="test1()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" started-at="2025-08-07T05:46:59 IST" name="test1" finished-at="2025-08-07T05:46:59 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest1()[pri:0, instance:pom1.FacebookLoginTest@710c2b53]" started-at="2025-07-31T05:16:14 IST" name="loginTest1" finished-at="2025-07-31T05:16:15 IST" duration-ms="292" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" started-at="2025-08-07T05:46:59 IST" name="test2" finished-at="2025-08-07T05:46:59 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest1 -->
-      </class> <!-- pom1.FacebookLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:grpmethod.GroupMethodTest@461ad730]" started-at="2025-08-07T05:46:59 IST" name="test3" finished-at="2025-08-07T05:46:59 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- grpmethod.GroupMethodTest -->
+      <class name="grpmethod.Grouomethod2">
+        <test-method signature="checkoutWithSingleItem()[pri:0, instance:grpmethod.Grouomethod2@3bcd05cb]" started-at="2025-08-07T05:46:59 IST" name="checkoutWithSingleItem" finished-at="2025-08-07T05:46:59 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithSingleItem -->
+        <test-method signature="checkoutWithoutPaymentMethod()[pri:0, instance:grpmethod.Grouomethod2@3bcd05cb]" started-at="2025-08-07T05:46:59 IST" name="checkoutWithoutPaymentMethod" finished-at="2025-08-07T05:46:59 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithoutPaymentMethod -->
+      </class> <!-- grpmethod.Grouomethod2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
