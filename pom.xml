@@ -53,12 +53,13 @@
 	
     <!-- Other dependencies -->
 
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.9.0</version> <!-- You can use latest version -->
-        <scope>test</scope>
-    </dependency>
+ <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.9.0</version> <!-- use latest stable -->
+    <scope>test</scope>
+</dependency>
+
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
